@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"nume": {
+			"name": "nume",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "nume",
+			"order": 0
+		},
+		"data": {
+			"name": "data",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "data",
+			"order": 1
+		},
+		"vehid": {
+			"name": "vehid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "vehid",
+			"order": 2
+		},
+		"cursa": {
+			"name": "cursa",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "cursa",
+			"order": 3
+		}
+	}
+}

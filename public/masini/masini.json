@@ -1,0 +1,40 @@
+[{	"id":"aut1",
+	"grupid":"111e64f1c5e0f873",
+	"nrinmatriculare":"BC 123",
+	"proprietar":{"nume":"Zgurean","prenume":"Petru"},
+	"adresa":"marasesti 157",
+	"marca":"Audi A8", 
+	"imagine":"/masini/masina1.jpg",
+	"utilizatori":["petru224"]
+},
+{
+	"id":"aut2",
+	"grupid":"3ee09cc29aa31800",
+	"nrinmatriculare":"BC 123434",
+	"proprietar":{"nume":"Miftode","prenume":"Andi"},
+	"adresa":"marasesti 157",
+	"marca":"Ferrari ", 
+	"imagine":"/masini/masina1.jpg",
+	"utilizatori":["petru224"]
+},
+{
+	"id":"aut3",
+	"grupid":"3ee09cc29aa31800",
+	"nrinmatriculare":"BC 4444",
+	"proprietar":{"nume":"Serban","prenume":"Mihaela"},
+	"adresa":"marasesti 157",
+	"marca":"Audi A8", 
+	"imagine":"/masini/masina1.jpg",
+	"utilizatori":["petru224"]
+},
+{
+	"id":"aut4",
+	"grupid":"a16017165514184e",
+	"nrinmatriculare":"BC 4444",
+	"proprietar":{"nume":"Serban","prenume":"Mihaela"},
+	"adresa":"marasesti 157",
+	"marca":"Audi A8", 
+	"imagine":"/masini/masina1.jpg",
+	"utilizatori":["petru"]
+}
+]

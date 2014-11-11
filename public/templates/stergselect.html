@@ -1,0 +1,8 @@
+Selecteaza 
+pt 
+Stergere
+<ul class="list" ng-controller="listagrupuriCtrl">
+    <li class="item ion-trash-b" ng-repeat="grup in grupuri" ng-click="go('app/stgrup/{{grup.id}}')">
+    	{{grup.nume}}
+    </li>
+</ul>

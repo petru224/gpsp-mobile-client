@@ -1,0 +1,10 @@
+{
+	"alerte":[
+				{
+					"nume":"depasire viteza",
+					"data":"01.01.01",
+					"vehid":"aut1",
+					"cursa":2,
+				}
+			 ]
+}

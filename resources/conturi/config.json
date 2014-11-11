@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "email",
+			"order": 0
+		},
+		"telefon": {
+			"name": "telefon",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "telefon",
+			"order": 1
+		},
+		"parola": {
+			"name": "parola",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "parola",
+			"order": 2
+		},
+		"alerte": {
+			"name": "alerte",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "alerte",
+			"order": 3
+		}
+	}
+}

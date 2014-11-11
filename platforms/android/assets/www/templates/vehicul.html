@@ -1,0 +1,54 @@
+<ion view ng-controller="vehiculidCtrl">
+<ion-content style="top:0">
+<body ng-controller="AppCtrl" >
+		<div ng-controller="traseuCtrl" ng-init="urmareste(0)">
+	    	<google-map center="map.center" zoom="map.zoom" drag-content="true" draggable="true" events="map.events" >
+	    	
+		    	<marker ng-repeat='coordonata in coordonate' coords='coordonata' options='{"title":coordonate[$index].titlu+"km/h"}'>
+				</marker>
+			
+				<polyline ng-repeat='coordonata in coordonate' path="[{latitude:coordonate[$index].latitude,
+					longitude:coordonate[$index].longitude}, {latitude:coordonate[$index+1].latitude, 
+					longitude:coordonate[$index+1].longitude}]" 
+					stroke='{"color":coordonate[$index+1].culoare,"weight":3}'>
+				</polyline>
+				<marker  coords='pozitiaactuala' options='{"title":"aici"}'>
+				</marker>
+			</google-map>
+		
+		 	<div >
+		 		
+		 		<div class="list" style="height:25px">
+				  <label class="item item-input item-select">
+				    <div class="input-label" >
+				      <h3>Alege cursa</h3>
+				    </div>
+				    <select style="position:absolute;left:90px; width:100px;" ng-model="dataindex" ng-change="incarcatraseu()">
+				      <option ng-repeat="data in date" value="{{$index}}" >{{data}}</option>
+				    </select>
+				    <button type="button" ng-click="centreaza()"  class="button button-small button-positive" style="width:70px;"> Centreaza</button>
+				  </label>
+				</div>	
+				<i ng-click="go('/app/group/'+masina.grupid)"class="ion-arrow-left-a" style="font-size: 30px;"></i>
+				<button type="button" ng-click="pozActMark(1)"  class="button button-small button-positive" style="position:absolute;left:40px;">Pozitia Curenta</button>
+
+		 		<button type="button"  ng-click="go('/app/detaliivehicul/'+masina.id)" style="position:absolute;left:140px;width:70px;"  class="button button-small button-positive">Detalii</button>
+
+			</div>
+
+	 
+			
+			<div class="list"  >
+				<!--<h5>{{pozitia | json}}</h5> -->
+			    <h5>{{masina.nrinmatriculare}} | {{masina.proprietar.nume}} {{masina.proprietar.prenume}}</h5>
+			    <marquee style="position:relative;height:15px"> {{adresa}}</marquee>
+			    
+			    <button type="button" ng-click="urmareste(1)" style="width:90px;"  class="button button-small button-positive">Urmareste {{nk}}</button>
+			    <button type="button" ng-click="stopumrareste()" style="position:absolute;left:100px;width:70px;"  class="button button-small button-positive">Stop</button>
+				
+			</div>
+			
+		</div>
+</body>
+</ion-content>
+</ion-view>

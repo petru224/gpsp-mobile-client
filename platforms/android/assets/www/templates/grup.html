@@ -1,0 +1,24 @@
+<ion-nav-bar class="bar-stable">
+	 <ion-nav-buttons side="left">
+        <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+	<i ng-click="go('/app/tracking')"class="ion-arrow-left-a" style="font-size: 30px;"></i>
+</ion-nav-bar>
+<ion-view title="Lista de vehicule"  ng-controller="listamasiniCtrl">
+ <ion-content  >
+<div>
+    <a class="item item-avatar" ng-controller="traseuCtrl" ng-href="#/app/vehicul/{{masina.id}}" ng-repeat="masina in masini">
+      <img src="masina1.jpg">
+      <h2>{{masina.nrinmatriculare}}</h2>
+      <p ng-init="functadresa(masina.id)">{{adresa}}</p>
+
+    </a>
+...
+</div>
+</ion-content>
+<div class="button-bar" style="position:absolute;bottom:5px;">
+      <a class="button button-positive" ng-click="go('/app')">Adauga</a>
+      <a class="button button-positive" ng-click="go('/app')">Editeaza</a>
+      <a class="button button-positive" ng-click="go('/app')">Sterge</a>
+    </div>
+</ion-view>

@@ -1,0 +1,7 @@
+{	"id":1,
+	"nrinmatriculare":"BC 123",
+	"proprietar":{"nume":"Zgurean","prenume":"Petru"},
+	"adresa":"marasesti 157",
+	"marca":"Audi A8", 
+	"imagine":"/masini/masina1.jpg"
+}

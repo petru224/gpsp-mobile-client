@@ -1,0 +1,31 @@
+<ion-nav-bar class="bar-stable">
+     <ion-nav-buttons side="left">
+        <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-view title="Cont">
+<ion-content class="has-header" ng-controller="contCtrl">
+  <ul class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Adresa de Email</span>
+        <input type="text" placeholder="{{cont.email}}" ng-model="inEmail">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Numar de telefon</span>
+        <input type="text" placeholder="{{cont.telefon}}"ng-model="inTelefon">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Parola noua</span>
+        <input type="password" placeholder="" ng-model="inParola">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Reintrodu parola</span>
+        <input type="password" placeholder="" ng-model="inParola2">
+      </label>
+  </ul>
+  <button class="button button-positive" ng-click="salveazasetarile()">Salveaza setarile</button>
+  <h4 style="color: red;">{{errParola}}<h4>
+</ion-content>
+</ion-view>
+
+

@@ -1,0 +1,8 @@
+Selecteaza 
+pt 
+editare
+<ul class="list" ng-controller="listagrupuriCtrl">
+    <li class="item ion-edit" ng-repeat="grup in grupuri" ng-click="go('app/edgrup/{{grup.id}}')">
+    	{{grup.nume}}
+    </li>
+</ul>

@@ -1,0 +1,61 @@
+{
+	"type": "Collection",
+	"properties": {
+		"grupid": {
+			"name": "grupid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "grupid",
+			"order": 0
+		},
+		"nrinmatriculare": {
+			"name": "nrinmatriculare",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "nrinmatriculare",
+			"order": 1
+		},
+		"proprietar": {
+			"name": "proprietar",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "proprietar",
+			"order": 2
+		},
+		"adresa": {
+			"name": "adresa",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "adresa",
+			"order": 3
+		},
+		"marca": {
+			"name": "marca",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "marca",
+			"order": 4
+		},
+		"imagine": {
+			"name": "imagine",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "imagine",
+			"order": 5
+		},
+		"utilizatori": {
+			"name": "utilizatori",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "utilizatori",
+			"order": 6
+		}
+	}
+}
